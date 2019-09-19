@@ -105,6 +105,73 @@ namespace AwesomeCalcTest
                 Assert.AreEqual(expectedResult, actualResult);
             }
 
+            [Test]
+            public void GetMultiplication_Input1point5and6_Returns9()
+            {
+                //Arrange
+                double number1 = 1.5; double number2 = 6;
+                double expectedResult = number1 * number2;
+                Calc testCalc = new Calc(number1, number2);
+                //Act 
+                double actualResult = testCalc.GetMultiplication();
+                //Assert 
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+            [Test]
+            public void GetMultiplication_Input10and6_Returns60()
+            {
+                //Arrange
+                double number1 = 10; double number2 = 6;
+                double expectedResult = number1 * number2;
+                Calc testCalc = new Calc(number1, number2);
+                //Act 
+                double actualResult = testCalc.GetMultiplication();
+                //Assert 
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+            [Test]
+            public void GetDivision_Input12and6_Returns2()
+            {
+                //Arrange
+                double number1 = 12; double number2 = 6;
+                double expectedResult = number1 / number2;
+                Calc testCalc = new Calc(number1, number2);
+                //Act 
+                double actualResult = testCalc.GetDivision();
+                //Assert 
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+            [Test]
+            public void GetDivision_Input100point5and5_Returns20point1()
+            {
+                //Arrange
+                double number1 = 100.5; double number2 = 5;
+                double expectedResult = number1 / number2;
+                Calc testCalc = new Calc(number1, number2);
+                //Act 
+                double actualResult = testCalc.GetDivision();
+                //Assert 
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+            [Test]
+            public void GetDivision_Input50point5and10_Returns5()
+            {
+                //Arrange
+                double number1 = 50; double number2 = 10;
+                double expectedResult = number1 / number2;
+                Calc testCalc = new Calc(number1, number2);
+                //Act 
+                double actualResult = testCalc.GetDivision();
+                //Assert 
+                Assert.AreEqual(expectedResult, actualResult);
+            }
+
+
+
         }
     }
 }
